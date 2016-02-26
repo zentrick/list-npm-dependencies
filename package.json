@@ -1,6 +1,6 @@
 {
   "name": "list-npm-dependencies",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Creates an inventory of an npm package's dependencies.",
   "main": "index.js",
   "author": "Zentrick nv (https://www.zentrick.com/)",
