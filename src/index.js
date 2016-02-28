@@ -7,8 +7,10 @@ export default (pkgRoot, options) => new Promise((resolve, reject) => {
     pkg.dependencies = {}
     if (pkg.parent != null) {
       const key = `${pkg.name}@${pkg.version}`
-      result.packages[key] = pkg
-      pkg.parent.dependencies[pkg.name] = pkg.version
+      if (result.packages[key] == null) {
+        result.packages[key] = pkg
+      }
+      result.packages[key].parent.dependencies[pkg.name] = pkg.version
     } else {
       result.root = pkg
     }
