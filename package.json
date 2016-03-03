@@ -23,9 +23,7 @@
     "test": "gulp test"
   },
   "repository": "zentrick/list-npm-dependencies",
-  "bugs": {
-    "url": "https://github.com/zentrick/list-npm-dependencies/issues"
-  },
+  "bugs": "https://github.com/zentrick/list-npm-dependencies/issues",
   "dependencies": {
     "babel-runtime": "^6.5.0",
     "npm-tree-walker": "^0.1.0"
